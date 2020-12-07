@@ -47,8 +47,12 @@ public class Cargo implements Comparable<Cargo>{
 	}
 
 	@Override
-	public int compareTo(Cargo o) {
-		// TODO Auto-generated method stub
+	public int compareTo(Cargo outro) {
+		if (salario < outro.salario) {
+			return -1;
+		} else if (salario > outro.salario) {
+			return 1;
+		}
 		return 0;
 	}
 
