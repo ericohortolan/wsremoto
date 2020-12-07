@@ -9,6 +9,11 @@ public class Elevador {
 	private byte qtdeAtual;
 	private short andarAtual;
 	
+	public void descer() {
+		if (andarAtual>andarMinimo) {
+			andarAtual--;
+		}
+	}
 	public void descer(short andar) {
 		if (andar>=andarMinimo) {
 			andarAtual=andar;
@@ -45,11 +50,7 @@ public class Elevador {
 				"Qtde de Pessoas.: " + qtdeAtual;
 	}
 	
-	public void descer() {
-		if (andarAtual>andarMinimo) {
-			andarAtual--;
-		}
-	}
+
 
 	
 	public void subir() {

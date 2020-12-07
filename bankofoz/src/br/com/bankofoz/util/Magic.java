@@ -1,7 +1,4 @@
-package br.com.universidadexyz.util;
-
-import java.sql.Connection;
-import java.sql.DriverManager;
+package br.com.bankofoz.util;
 
 import javax.swing.JOptionPane;
 
@@ -19,7 +16,6 @@ public class Magic {
 		return Float.parseFloat(s(msg));
 	}
 	
-
 	
 	
 	
